@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello YoutubeController!{% endblock %}
+
+{% block body %}
+    {{form(form)}}
+
+    {%  for youtube in youtubes %}
+        <p> 
+            {{
+                youtube.name
+            }}
+            .
+            {{
+                youtube.url
+            }}
+        </p>
+    {% endfor %}
+{% endblock %}
